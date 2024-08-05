@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="index.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>PvPバトルシミュレータ</title>
+</head>
+<body>
+    <button id="back_turn">戻る</button>
+    <div class="d-flex justify-content-evenly">
+        <div class="text-center">
+            <h6 id="left_shield_times">シールド数:<span>2/2</span></h6>
+            <h6 id="left_change_timer">交代タイマー:<span>0</span></h6>
+            <h6 id="left_stiffen_time">残硬直ターン:<span>0</span></h6>
+            <h6 id="left_atack_buff">攻撃バフ:<span>0</span></h6>
+            <h6 id="left_diffence_buff">防御バフ:<span>0</span></h6>
+            <h2 id="left_buttle_pokemon_name">ピカチュウ</h2>
+            <button id="left_skil1" class="normal_skil">でんこうせっか</button>
+            <button id="left_skil2" class="gauge_skil">10まんボルト</button>
+            <button id="left_skil3" class="gauge_skil">ボルテッカー</button>
+            <h5>ゲージ量</h5>
+            <h4 id="left_buttle_pokemon_gauge">0/100</h4>
+            <h5>HP</h5>
+            <h4 id="left_buttle_pokemon_hp">100/100</h4>
+            <h5>交代先</h5>
+            <button id="left_pokemon_2_name" class="left_change_pokemon" value="pokemon2">ピチュー</button>
+            <h6 id="left_pokemon_2_gauge">ゲージ量 <span>0/100</span></h6>
+            <h6 id="left_pokemon_2_hp">HP <span>100/100</span></h6>
+            <button id="left_pokemon_3_name" class="left_change_pokemon" value="pokemon3">ライチュウ</button>
+            <h6 id="left_pokemon_3_gauge">ゲージ量 <span>0/100</span></h6>
+            <h6 id="left_pokemon_3_hp">HP <span>100/100</span></h6>
+        </div>
+        <div class="text-center">
+            <h6 id="right_shield_times">シールド数:<span>2/2</span></h6>
+            <h6 id="right_change_timer">交代タイマー:<span>0</span></h6>
+            <h6 id="right_stiffen_time">残硬直ターン:<span>0</span></h6>
+            <h6 id="right_atack_buff">攻撃バフ:<span>0</span></h6>
+            <h6 id="right_diffence_buff">防御バフ:<span>0</span></h6>
+            <h2 id="right_buttle_pokemon_name">ピカチュウ</h2>
+            <button id="right_skil1" class="normal_skil">でんこうせっか</button>
+            <button id="right_skil2" class="gauge_skil">10まんボルト</button>
+            <button id="right_skil3" class="gauge_skil">ボルテッカー</button><br>
+            <h5>ゲージ量</h5>
+            <h4 id="right_buttle_pokemon_gauge">0/100</h4>
+            <h5>HP</h5>
+            <h4 id="right_buttle_pokemon_hp">100/100</h4>
+            <h5>交代先</h5>
+            <button id="right_pokemon_2_name" class="right_change_pokemon" value="pokemon2">ピチュー</button>
+            <h6 id="right_pokemon_2_gauge">ゲージ量 <span>0/100</span></h6>
+            <h6 id="right_pokemon_2_hp">HP <span>100/100</span></h6>
+            <button id="right_pokemon_3_name" class="right_change_pokemon" value="pokemon3">ライチュウ</button>
+            <h6 id="right_pokemon_3_gauge">ゲージ量 <span>0/100</span></h6>
+            <h6 id="right_pokemon_3_hp">HP <span>100/100</span></h6>
+        </div>
+    </div>
+    <div class="modal fade" id="modal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">スワイプ調整</h5>
+              <button type="button" class="close" data-dismiss="modal">
+                <span>&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <input type="number" step="0.01" max="1.00" min="0.25" value="1.00">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-modal-ok>OK</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="buttle.js"></script>
+</body>
+</html>

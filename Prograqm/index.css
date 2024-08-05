@@ -1,0 +1,50 @@
+html {
+    width: 99vw;
+}
+body{
+    text-align: center !important;
+    font-family:'メイリオ', 'Meiryo', sans-serif;
+    letter-spacing: 0.04rem;
+    margin: 4% !important;
+}
+.error{
+    color: red;
+}
+.flex{
+    display: flex;
+}
+#left, #right{
+    width: 50%;
+}
+#left input, #left select,
+#right input, #right select{
+    width: 90%;
+    max-width: 15rem;
+}
+.text-center {
+    width: 90%;
+}
+button {
+    margin-bottom: 0.4rem !important;
+}
+#buttle_start {
+    margin: 5%;
+}
+select{
+    margin-bottom: 0.5rem !important;
+}
+.btn-outline-primary {
+    width: 30px;
+    height: 30px;
+    padding: 1px !important;
+    position: relative;
+}
+img {
+    position:absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.input_name {
+    width: 70% !important;
+}
